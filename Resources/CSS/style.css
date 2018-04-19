@@ -1,0 +1,411 @@
+
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Header Styling */
+
+header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logobox {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.logobox img {
+  height: 32px;
+  margin-right: 4px;
+}
+
+.logobox span {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
+nav {
+  margin-right: 24px;
+}
+
+nav a {
+  margin-left: 16px;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Header styling for phone screens */
+
+@media only screen and (max-width: 480px) {
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .logobox {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+/* Banner Styling */
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: silver;
+}
+
+.banner img {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.bannerbox {
+  width: 25%;
+  border: 1px solid green;
+}
+
+.bannerbox h1 {
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.bannerbox h3 {
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.btnbox {
+  width: 100%;
+}
+
+.button {
+  font-size: 16px;
+  background-color: grey;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  text-align: center;
+}
+
+/* Banner styling for phone screens */
+
+@media only screen and (max-width:480px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner img{
+    width: 100%;
+    margin: 0px;
+  }
+
+  .bannerbox {
+    width: 100%;
+    border: 1px solid green;
+  }
+
+  .bannerbox h1 {
+    margin: 32px 16px;
+  }
+
+  .bannerbox h3 {
+    margin: 0 16px;
+  }
+
+  .button {
+    margin: 24px 16px 32px 16px;
+  }
+}
+
+
+/* Styling for informational section */
+
+.information {
+  display: flex;
+}
+
+.information-left {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.information-left img {
+  width: 100%;
+}
+
+.information-left h1 {
+  margin-top: 32px;
+}
+
+.information-left p {
+  margin-top: 24px;
+}
+
+.information-right {
+  width: 40%;
+  border: 1px solid silver;
+}
+
+.infobox {
+  display: flex;
+  align-items: center;
+}
+
+.infobox img {
+  width: 35%;
+  height: 100%;
+  margin: 16px 16px;
+}
+
+.infobox p,
+.infobox h3 {
+  margin: 8px;
+}
+
+.infobox button {
+  margin-left: 8px;
+}
+
+.infobox:last-child {
+  background-color: silver;
+}
+
+.mobileimg {
+  display: none;
+}
+
+/* Styling for informational section for phone screens */
+
+@media only screen and (max-width:480px) {
+
+  .information-left {
+    display: none;
+  }
+
+  .information-right {
+    width: 100%;
+    margin: 16px 16px 0px 16px;
+  }
+
+  .infobox {
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 64px;
+  }
+
+  .infobox .mobileimg {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .infobox img {
+    display: none;
+  }
+
+  .infobox p,
+  .infobox h3,
+  .infobox button {
+    margin-left: 16px;
+  }
+
+  .infobox h3 {
+    margin-top: 32px;
+  }
+
+  .infobox:last-child {
+    background-color: white;
+    margin-bottom: 32px;
+  }
+}
+
+/* Styling for Learning section */
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: silver;
+}
+
+.learning h1 {
+  margin-top: 32px;
+  font-weight: bold;
+}
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 60px 32px 60px;
+}
+
+.coursebox {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 25%;
+  margin: 32px;
+  background-color: white;
+  padding-bottom: 24px;
+}
+
+.coursebox img {
+  width: 100%;
+}
+
+.coursebox h3 {
+  margin-top: 16px;
+}
+
+.coursebox p {
+  margin-top: 8px;
+}
+
+.coursebox p,
+.coursebox h3 {
+  margin-left: 16px;
+}
+
+.crs {
+  text-transform: uppercase;
+}
+
+.mobilelist {
+  display: none;
+}
+
+/* Styling for courses section for phone screens */
+
+@media only screen and (max-width:480px) {
+
+  .learning {
+    background-color: white;
+    border: 1px solid green;
+  }
+
+  .courses {
+    display: none;
+  }
+
+  .mobilelist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 16px 8px 24px 8px;
+    border: 1px solid green;
+  }
+
+  .mobilelist h3 {
+    margin: 0px 16px 8px 16px;
+    padding: 16px 16px 24px 16px;
+    background-color: silver;
+  }
+}
+
+/* Styling for Thesis section */
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thesis h1 {
+  margin: 32px auto;
+  font-weight: bold;
+}
+
+.thesis .information-right {
+  border: none;
+}
+
+.thesis .information-left {
+  margin-top: 0;
+}
+
+.thesis .information-left h3 {
+  margin-top: 24px;
+}
+
+.thesis .information-left video {
+  border: 1px solid black;
+}
+
+.thesis .infobox:first-child {
+  background-color: silver;
+}
+
+.thesis .infobox:last-child {
+  background-color: white;
+}
+
+/* Styling for thesis section for phone screens */
+
+@media only screen and (max-width:480px) {
+
+  .thesis .information-right {
+    display: none;
+  }
+
+  .thesis .information-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .thesis .information-left h3,
+  .thesis .information-left p{
+    display: none;
+  }
+
+}
+
+/* Styling for footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  border-top: 1px solid silver;
+}
+
+footer span,
+footer nav {
+  margin-left: 24px;
+  margin-top: 16px;
+}
