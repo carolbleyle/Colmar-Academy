@@ -119,26 +119,58 @@ nav a {
 
 .bannerbox h3 {
   line-height: 1.2;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .btnbox {
-  width: 100%;
-}
-
-.button {
   font-size: 24px;
-  background-color: #7ca2c6;
   padding-top: 8px;
   padding-bottom: 8px;
   color: #313131;
   font-weight: 700;
   letter-spacing: 3px;
   text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: all 6s ease-out;
+}
+
+.btnbehind {
+  background: radial-gradient(#7ca2c6, white);
+  width: 70%;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: width .75s ease-out;
+}
+
+
+.button {
+  font-size: 24px;
+  background-color: rgba(124, 162, 198, 1);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #313131;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: background-color 1s ease-out;
+}
+
+.button a {
+  text-decoration: none;
 }
 
 .button:hover {
-  background: radial-gradient(white, #7ca2c6);
+  background-color: rgba(125, 162, 198, 0);
+}
+
+.btnbehind:hover {
+  width: 80%;
 }
 
 /* Banner styling for phone screens */
@@ -163,10 +195,10 @@ nav a {
   }
 
   .bannerbox h3 {
-    margin: 0 16px;
+    margin: 0 16px 32px 16px;
   }
 
-  .button {
+  .button .btnbehind {
     margin: 24px 16px 32px 16px;
   }
 }
@@ -221,6 +253,38 @@ nav a {
 
 .infobox button {
   margin-left: 8px;
+  width: 200px;
+  margin-right: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid white;
+  transition: all 0.5s;
+}
+
+.infobox button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.infobox button span:after {
+  content: ">>";
+  padding-left: 4px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: #313131;
+}
+
+.infobox button:hover span{
+  padding-right: 10px;
+  left: -10px;
+}
+
+.infobox button:hover span:after {
+  opacity: 1;
 }
 
 .infobox:last-child {
@@ -264,7 +328,7 @@ nav a {
   .infobox p,
   .infobox h3,
   .infobox button {
-    margin-left: 16px;
+    margin-left: 16px
   }
 
   .infobox h3 {
@@ -272,9 +336,10 @@ nav a {
   }
 
   .infobox:last-child {
-    background-color: white;
+    background-color: #7ca2c6;
     margin-bottom: 32px;
   }
+
 }
 
 /* Styling for Learning section */
@@ -342,7 +407,10 @@ nav a {
 
   .learning {
     background-color: white;
-    border: 1px solid green;
+  }
+
+  .learning h1 {
+    color: #313131;
   }
 
   .courses {
@@ -354,13 +422,13 @@ nav a {
     flex-direction: column;
     width: 100%;
     margin: 16px 8px 24px 8px;
-    border: 1px solid green;
   }
 
   .mobilelist h3 {
     margin: 0px 16px 8px 16px;
     padding: 16px 16px 24px 16px;
-    background-color: silver;
+    background-color: white;
+    border: 2px solid #7ca2c6;
   }
 }
 
@@ -405,6 +473,14 @@ nav a {
 /* Styling for thesis section for phone screens */
 
 @media only screen and (max-width:480px) {
+
+  .thesis {
+    border: 1px solid green;
+  }
+
+  .thesis h1 {
+    font-size: 48px;
+  }
 
   .thesis .information-right {
     display: none;
