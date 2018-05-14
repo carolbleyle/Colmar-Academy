@@ -5,10 +5,9 @@
 <head>
   <title>Colmar Academy</title>
   <link href="./Resources/CSS/reset.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Courgette|Kanit:300,300i,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pridi:400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Volkhov:400,400i,700,700i" rel="stylesheet">
+  <link href="./favicon.ico" rel="icon" type="image/x-icon">
   <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -40,15 +39,15 @@
 <!-- Banner with initial image, tag line and CTA button -->
 
   <div class="banner">
-    <img src="./Resources/images/banner.jpg">
-    <div class="bannerbox">
+    <img src="./Resources/images/banner.jpg" alt="students studying">
+    <div class="bannerbox" role="presentation">
       <h1>Learn something new everyday
       </h1>
       <h3>Take another step toward achieving your dreams.
       </h3>
-      <div class="btnbox">
-        <div class="btnbehind">
-          <div class="button">
+      <div class="btnbox" role="presentation">
+        <div class="btnbehind" role="presentation">
+          <div class="button" role="link">
             <a href="#">Start here</a>
           </div>
         </div>
@@ -58,42 +57,42 @@
 
   <!-- Informational secion with orientation dates, etc. -->
 
-  <div class="information">
-    <div class="information-left">
-      <img src="./Resources/images/information-main.jpg">
+  <div class="information" role="presentation">
+    <div class="information-left" role="presentation">
+      <img src="./Resources/images/information-main.jpg" alt="former Colmar Academy student">
       <h2>It doesn't hurt to keep practicing</h2>
-      <p>"I always wanted to learn graphic design, but never thought I had the
+      <p aria-label="quote">"I always wanted to learn graphic design, but never thought I had the
         talent. Then I took my first course at Colmar Academy and the instructors
         inspired me to keep going. Today, I love what I do everyday."
       </p>
-      <p class="author">Emanual, Sr. Graphical Designer at Hiring.com</p>
+      <p class="author" aria-label="Author of quote">Emanual, Sr. Graphical Designer at Hiring.com</p>
     </div>
-    <div class="information-right">
-      <div class="infobox">
-        <img src="./Resources/images/information-orientation.jpg">
-        <img class="mobileimg" src="./Resources/images/information-orientation-mobile.jpg">
-        <div class="details">
+    <div class="information-right" role="presentation">
+      <div class="infobox" role="presentation">
+        <img src="./Resources/images/information-orientation.jpg" alt="">
+        <img class="mobileimg" src="./Resources/images/information-orientation-mobile.jpg" alt="">
+        <div class="details" role="presentation">
           <h3>Orientation date</h3>
           <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-          <button><span>Read more  </span></button>
+          <button role="link"><span>Read more  </span></button>
         </div>
       </div>
-      <div class="infobox">
-        <img src="./Resources/images/information-campus.jpg">
-        <img class="mobileimg" src="./Resources/images/information-campus-mobile.jpg">
+      <div class="infobox" role="presentation">
+        <img src="./Resources/images/information-campus.jpg" alt="">
+        <img class="mobileimg" src="./Resources/images/information-campus-mobile.jpg" alt="">
         <div class="details">
           <h3>Our campus</h3>
           <p>Find which campus is close by you</p>
-          <button><span>Read more  </span></button>
+          <button role="link"><span>Read more  </span></button>
         </div>
       </div>
-      <div class="infobox">
-        <img src="./Resources/images/information-guest-lecture.jpg">
-        <img class="mobileimg" src="./Resources/images/information-guest-lecture-mobile.jpg">
-        <div class="details">
+      <div class="infobox" role="presentation">
+        <img src="./Resources/images/information-guest-lecture.jpg" alt="">
+        <img class="mobileimg" src="./Resources/images/information-guest-lecture-mobile.jpg" alt="">
+        <div class="details" role="presentation">
           <h3>Our guest lecture</h3>
           <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-          <button><span>Read more  </span></button>
+          <button role="link"><span>Read more  </span></button>
         </div>
       </div>
     </div>
@@ -101,47 +100,47 @@
 
   <!--Learning section with course descriptions -->
 
-  <div class="learning">
+  <div class="learning" role="presentation">
     <h1>Start learning</h1>
-    <div class="courses">
-      <div class="coursebox">
-        <img src="./Resources/images/course-software.jpg">
+    <div class="courses" role="presentation">
+      <div class="coursebox" role="presentation">
+        <img src="./Resources/images/course-software.jpg" alt="">
         <h3>Software engineering</h3>
         <p class="crs">Courses</p>
         <p>Web Development, Mobile Development, iOT, APIs</p>
       </div>
-      <div class="coursebox">
-        <img src="./Resources/images/course-computer-art.jpg">
+      <div class="coursebox" role="presentation">
+        <img src="./Resources/images/course-computer-art.jpg" alt="">
         <h3>Software engineering</h3>
         <p class="crs">Courses</p>
         <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
       </div>
-      <div class="coursebox">
-        <img src="./Resources/images/course-design.jpg">
+      <div class="coursebox" role="presentation">
+        <img src="./Resources/images/course-design.jpg" alt="">
         <h3>Design</h3>
         <p class="crs">Courses</p>
         <p>User Experience Design, User Research, Visual Design</p>
       </div>
-      <div class="coursebox">
-        <img src="./Resources/images/course-data.jpg">
+      <div class="coursebox" role="presentation">
+        <img src="./Resources/images/course-data.jpg" alt="">
         <h3>Data</h3>
         <p class="crs">Courses</p>
         <p>Data Science, Big Data, SQL, Data Visualization</p>
       </div>
-      <div class="coursebox">
-        <img src="./Resources/images/course-business.jpg">
+      <div class="coursebox" role="presentation">
+        <img src="./Resources/images/course-business.jpg" alt="">
         <h3>Business</h3>
         <p class="crs">Courses</p>
         <p>Product Development, Business Development, Startup</p>
       </div>
-      <div class="coursebox">
-        <img src="./Resources/images/course-marketing.jpg">
+      <div class="coursebox" role="presentation">
+        <img src="./Resources/images/course-marketing.jpg" alt="">
         <h3>Marketing</h3>
         <p class="crs">Courses</p>
         <p>Analytics, Content Marketing, Mobile Marketing</p>
       </div>
     </div>
-    <div class="mobilelist">
+    <div class="mobilelist" role="presentation">
       <h3>Software engineering</h3>
       <h3>Computer art</h3>
       <h3>Design</h3>
@@ -153,12 +152,12 @@
 
 <!-- Thesis exhibit secion -->
 
-  <div class="thesis">
+  <div class="thesis" role="presentation">
     <h1>Thesis exhibits</h1>
-    <div class="information">
-      <div class="information-left">
+    <div class="information" role="presentation">
+      <div class="information-left" role="presentation">
         <video width="100%" height="auto" controls>
-          <source src="./Resources/videos/thesis.mp4" type="video/mp4">
+          <source src="./Resources/videos/thesis.mp4" type="video/mp4" alt="">
           </video>
           <h3>Reimagine Urban</h3>
           <p>"This video represents a day in the city, contrasting the solid
@@ -166,16 +165,16 @@
             of nature and time that march relentlessly on."
           </p>
       </div>
-      <div class="information-right">
-        <div class="infobox">
-          <img src="./Resources/images/thesis-fisma.jpg">
+      <div class="information-right" role="presentation">
+        <div class="infobox" role="presentation">
+          <img src="./Resources/images/thesis-fisma.jpg" alt="">
           <div class="details">
             <h3>Fisma: Design and Prototype</h3>
             <p>Designer showcase of new prototype project</p>
           </div>
         </div>
-        <div class="infobox">
-          <img src="./Resources/images/thesis-now-and-then.jpg">
+        <div class="infobox" role="presentation">
+          <img src="./Resources/images/thesis-now-and-then.jpg" alt="">
           <div class="details">
             <h3>Now and then</h3>
             <p>Research study about New York</p>
